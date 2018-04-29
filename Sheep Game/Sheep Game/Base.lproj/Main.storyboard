@@ -20,7 +20,7 @@
                         <subviews>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sheep.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7IQ-Ee-X16">
                                 <rect key="frame" x="115" y="342" width="145" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="dud-KE-a9c" appends="YES" id="RH0-YK-DzE"/>
@@ -28,11 +28,11 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exit.png" translatesAutoresizingMaskIntoConstraints="NO" id="1U9-mz-T8K" userLabel="exit">
                                 <rect key="frame" x="82" y="750" width="210" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SuD-Os-uou" userLabel="time">
                                 <rect key="frame" x="282" y="73" width="65" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -42,8 +42,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="exit" destination="1U9-mz-T8K" id="g9Z-Da-5vL"/>
-                        <outlet property="sheep" destination="7IQ-Ee-X16" id="619-Ja-vOE"/>
+                        <outlet property="exitImage" destination="1U9-mz-T8K" id="g9Z-Da-5vL"/>
+                        <outlet property="sheepImage" destination="7IQ-Ee-X16" id="619-Ja-vOE"/>
                         <outlet property="timerLabel" destination="SuD-Os-uou" id="hZZ-wQ-Bkh"/>
                     </connections>
                 </viewController>
