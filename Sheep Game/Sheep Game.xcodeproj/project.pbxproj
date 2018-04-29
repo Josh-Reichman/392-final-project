@@ -13,6 +13,7 @@
 		0885C54220953B84004BD088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0885C54120953B84004BD088 /* Assets.xcassets */; };
 		0885C54520953B84004BD088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0885C54320953B84004BD088 /* LaunchScreen.storyboard */; };
 		550C32CE209626310036D189 /* sheep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 550C32CD209626310036D189 /* sheep.jpg */; };
+		550C32D020962C380036D189 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 550C32CF20962C380036D189 /* exit.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0885C54420953B84004BD088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0885C54620953B84004BD088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550C32CD209626310036D189 /* sheep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheep.jpg; sourceTree = "<group>"; };
+		550C32CF20962C380036D189 /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				0885C54120953B84004BD088 /* Assets.xcassets */,
 				0885C54320953B84004BD088 /* LaunchScreen.storyboard */,
 				0885C54620953B84004BD088 /* Info.plist */,
+				550C32CF20962C380036D189 /* exit.png */,
 				550C32CD209626310036D189 /* sheep.jpg */,
 			);
 			path = "Sheep Game";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0885C54520953B84004BD088 /* LaunchScreen.storyboard in Resources */,
+				550C32D020962C380036D189 /* exit.png in Resources */,
 				550C32CE209626310036D189 /* sheep.jpg in Resources */,
 				0885C54220953B84004BD088 /* Assets.xcassets in Resources */,
 				0885C54020953B83004BD088 /* Main.storyboard in Resources */,
