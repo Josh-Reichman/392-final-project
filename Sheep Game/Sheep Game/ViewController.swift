@@ -16,13 +16,13 @@ class ViewController: UIViewController {
     
     var tapping = false
     var target = CGPoint(x: 0,y: 0)
-    var time = 0
+    static var time = 0  //Jiakai Chen: change it to static for leaderboard and congrats message
     var timer = Timer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ViewController.time = 0
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {_ in
             self.update()
         })
@@ -35,8 +35,17 @@ class ViewController: UIViewController {
     fileprivate func checkIfSheepExited() {
         if (sheepImage.frame.intersects(exitImage.frame)){
             timer.invalidate()
-            let alert = UIAlertController(title: "Congratulations", message: "Sheep out of barn in "+String(time)+" seconds.", preferredStyle: UIAlertControllerStyle.alert) //TODO: Put return to title screen or start again once it's all implimented.
-            self.present(alert, animated: true, completion: nil)
+            /*let alert = UIAlertController(title: "Congratulations", message: "Sheep out of barn in "+String(time)+" seconds.", preferredStyle: UIAlertControllerStyle.alert) //TODO: Put return to title screen or start again once it's all implimented.
+            self.present(alert, animated: true, completion: nil)*/
+            
+            //Jiakai Chen: popUp congrats message
+            let popOverVC = UIStoryboard(name:"Main", bundle:
+                nil).instantiateViewController(withIdentifier:"CongratsVC") as! PopUpViewController
+            self.addChildViewController(popOverVC)
+            popOverVC.view.frame = self.view.frame
+            self.view.addSubview(popOverVC.view)
+            popOverVC.didMove(toParentViewController: self)
+ 
             tapping = true
         }
     }
@@ -65,8 +74,9 @@ class ViewController: UIViewController {
     }
     
     func update(){
-        time += 1
-        timerLabel.text = String(time) + "s"
+        //Jiakai Chen: match the static variable.
+        ViewController.time += 1
+        timerLabel.text = String(ViewController.time) + "s"
     }
     
     @IBAction func tapOnSheep(_ sender: Any) {
@@ -83,6 +93,8 @@ class ViewController: UIViewController {
         })
     }
 
-
+    @IBAction func backToMenu(_ sender: Any) {
+        performSegue(withIdentifier: "gameToMenu", sender: self)
+    }
 }
 
