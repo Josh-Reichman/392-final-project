@@ -13,6 +13,7 @@ class NameRecordViewController: UIViewController {
     @IBOutlet weak  var nameField: UITextField!
     
     static var nameRecord = "";
+    static var updateStats:Bool = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +34,11 @@ class NameRecordViewController: UIViewController {
             nameField.shake()
         }
         else{
+            NameRecordViewController.updateStats = true;
             NameRecordViewController.nameRecord = nameField.text!
             performSegue(withIdentifier: "NameRecordToLeaderboard", sender: self)
             //add recorded player variable in leaderboardViewController
-            LeaderboardViewController.recordedNumber += 1
+            NameRecordViewController.updateStats = true;
         }
     }
     

@@ -37,7 +37,7 @@ class ThirdViewController: UIViewController {
     //move back the text into the VC with animation
     override func viewDidAppear(_ animated: Bool) {
         //animation gameName apper
-        UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
             self.gameName.center.x += self.view.bounds.width
         },
         completion:{ finished in
@@ -51,7 +51,7 @@ class ThirdViewController: UIViewController {
         })
         
         //animation startGameButton
-        UIView.animate(withDuration: 1.0, delay: 1, options: [],
+        UIView.animate(withDuration: 0.5, delay: 0.3, options: [],
                        animations: {
                         self.startGameButton.center.x += self.view.bounds.width
         },
@@ -59,7 +59,7 @@ class ThirdViewController: UIViewController {
         )
         
         //animation leaderboardButton
-        UIView.animate(withDuration: 1, delay: 1.2, options: [],
+        UIView.animate(withDuration: 0.5, delay: 0.5, options: [],
                        animations: {
                         self.leaderboardButton.center.x += self.view.bounds.width
         },
@@ -67,7 +67,7 @@ class ThirdViewController: UIViewController {
         )
         
         //animation optionButton
-        UIView.animate(withDuration: 1, delay: 1.5, options: [],
+        UIView.animate(withDuration: 0.5, delay: 0.7, options: [],
                        animations: {
                         self.optionButton.center.x += self.view.bounds.width
         },

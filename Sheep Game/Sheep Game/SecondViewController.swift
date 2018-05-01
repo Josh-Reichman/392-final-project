@@ -9,7 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    static var sheepNumber = 1;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +32,22 @@ class SecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func ChooseOneSheep(_ sender: Any) {
+        LeaderboardViewController.gamemode = 1
+    }
+    
+    @IBAction func ChooseTwoSheep(_ sender: Any) {
+        LeaderboardViewController.gamemode = 2
+    }
+    
+    @IBAction func ChooseThreeSheep(_ sender: Any) {
+        LeaderboardViewController.gamemode = 3
+    }
+    
+    @IBAction func ChooseFourSheep(_ sender: Any) {
+        LeaderboardViewController.gamemode = 4
+    }
     @IBAction func backToMenu(_ sender: Any) {
         performSegue(withIdentifier: "optionToMenu", sender: self)
     }
