@@ -52,8 +52,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sheep_right" translatesAutoresizingMaskIntoConstraints="NO" id="7IQ-Ee-X16">
-                                <rect key="frame" x="151" y="318" width="113" height="100"/>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep Top Down" translatesAutoresizingMaskIntoConstraints="NO" id="7IQ-Ee-X16">
+                                <rect key="frame" x="135" y="305" width="144" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -423,9 +423,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Sheep Top Down" width="2825" height="1856"/>
         <image name="exit.png" width="368" height="368"/>
         <image name="grass" width="1600" height="1200"/>
-        <image name="sheep_right" width="1000" height="1000"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Dvk-IH-xOo"/>
