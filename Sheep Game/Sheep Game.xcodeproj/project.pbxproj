@@ -11,7 +11,6 @@
 		04EABD9D209788C700C41BE4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABD9C209788C700C41BE4 /* ThirdViewController.swift */; };
 		04EABDA32097921400C41BE4 /* WanderingGameName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDA22097921400C41BE4 /* WanderingGameName.swift */; };
 		04EABDA520979FC000C41BE4 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDA420979FC000C41BE4 /* ButtonAnimation.swift */; };
-		04EABDA72097A81500C41BE4 /* SheepSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDA62097A81500C41BE4 /* SheepSelectViewController.swift */; };
 		04EABDA92097B17100C41BE4 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDA82097B17100C41BE4 /* PopUpViewController.swift */; };
 		04EABDAB2097C58800C41BE4 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */; };
 		04EABDAF2097CFB900C41BE4 /* NameRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDAE2097CFB900C41BE4 /* NameRecordViewController.swift */; };
@@ -30,7 +29,6 @@
 		04EABD9C209788C700C41BE4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		04EABDA22097921400C41BE4 /* WanderingGameName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderingGameName.swift; sourceTree = "<group>"; };
 		04EABDA420979FC000C41BE4 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
-		04EABDA62097A81500C41BE4 /* SheepSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheepSelectViewController.swift; sourceTree = "<group>"; };
 		04EABDA82097B17100C41BE4 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		04EABDAE2097CFB900C41BE4 /* NameRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRecordViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				04EABDB02097D0B200C41BE4 /* UItextAnimation.swift */,
 				0885C53E20953B83004BD088 /* Main.storyboard */,
 				04EABDA82097B17100C41BE4 /* PopUpViewController.swift */,
-				04EABDA62097A81500C41BE4 /* SheepSelectViewController.swift */,
 				04EABD9A209781A700C41BE4 /* SecondViewController.swift */,
 				0885C54120953B84004BD088 /* Assets.xcassets */,
 				04EABD9C209788C700C41BE4 /* ThirdViewController.swift */,
@@ -178,7 +175,6 @@
 				0885C53D20953B83004BD088 /* ViewController.swift in Sources */,
 				04EABD9D209788C700C41BE4 /* ThirdViewController.swift in Sources */,
 				04EABDB12097D0B200C41BE4 /* UItextAnimation.swift in Sources */,
-				04EABDA72097A81500C41BE4 /* SheepSelectViewController.swift in Sources */,
 				04EABDA92097B17100C41BE4 /* PopUpViewController.swift in Sources */,
 				0885C53B20953B83004BD088 /* AppDelegate.swift in Sources */,
 			);

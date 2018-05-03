@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 class LeaderboardViewController: UIViewController {
-
+    
     //check how many player are recorded
     
     //var playerStats = [[String]](repeating: [String](repeating: "0", count: 0), count: 5)
@@ -40,13 +40,13 @@ class LeaderboardViewController: UIViewController {
         super.viewDidLoad()
         
         /*adding name and time
-        if (NameRecordViewController.updateStats == true){
-            if(NameRecordViewController.nameRecord != ""){
-            playerStats[SecondViewController.sheepNumber].append(NameRecordViewController.nameRecord)
-            playerStats[SecondViewController.sheepNumber].append(String(ViewController.time))
-                
-            }
-        }
+         if (NameRecordViewController.updateStats == true){
+         if(NameRecordViewController.nameRecord != ""){
+         playerStats[SecondViewController.sheepNumber].append(NameRecordViewController.nameRecord)
+         playerStats[SecondViewController.sheepNumber].append(String(ViewController.time))
+         
+         }
+         }
          */
         
         if (NameRecordViewController.updateStats == true){
@@ -72,12 +72,12 @@ class LeaderboardViewController: UIViewController {
         }
         
         
-
+        
         //compare one sheep
         if(timeOne.min() != nil){
-        var array1 = timeOne.sorted()
-        minimumTime = array1[0]
-        minTimeLocation = timeOne.index(of: minimumTime)!
+            var array1 = timeOne.sorted()
+            minimumTime = array1[0]
+            minTimeLocation = timeOne.index(of: minimumTime)!
         }
         //compare two sheep
         if(timeTwo.min() != nil){
@@ -109,27 +109,27 @@ class LeaderboardViewController: UIViewController {
     func addLabel(){
         
         let label1 = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 21))
-        label1.center = CGPoint(x: 180, y: 300)
+        label1.center = CGPoint(x: 180, y: 270)
         
         let label2 = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 21))
-        label2.center = CGPoint(x: 180, y: 400)
+        label2.center = CGPoint(x: 180, y: 370)
         
         let label3 = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 21))
-        label3.center = CGPoint(x: 180, y: 500)
+        label3.center = CGPoint(x: 180, y: 470)
         
         let label4 = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 21))
-        label4.center = CGPoint(x: 180, y: 600)
+        label4.center = CGPoint(x: 180, y:570)
         
         //One sheep highest
         if(timeOne.min() != nil){
-        label1.text = " Player: \(nameOne[minTimeLocation]) TimeUsed: \(minimumTime)"
+            label1.text = " Player: \(nameOne[minTimeLocation]) TimeUsed: \(minimumTime)"
         }
         else{
             label1.text = " Player: None TimeUsed: None"
         }
         //Two sheep highest
         if(timeTwo.min() != nil){
-          label2.text = " Player: \(nameTwo[twoSheepMinTimeLocation]) TimeUsed: \(twoSheepMinimumTime)"
+            label2.text = " Player: \(nameTwo[twoSheepMinTimeLocation]) TimeUsed: \(twoSheepMinimumTime)"
         }
         else{
             label2.text = " Player: None TimeUsed: None"
@@ -159,21 +159,21 @@ class LeaderboardViewController: UIViewController {
         self.view.addSubview(label3)
         self.view.addSubview(label4)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
