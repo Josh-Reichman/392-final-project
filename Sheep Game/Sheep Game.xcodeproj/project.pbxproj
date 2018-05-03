@@ -15,10 +15,10 @@
 		04EABDAB2097C58800C41BE4 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */; };
 		04EABDAF2097CFB900C41BE4 /* NameRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDAE2097CFB900C41BE4 /* NameRecordViewController.swift */; };
 		04EABDB12097D0B200C41BE4 /* UItextAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDB02097D0B200C41BE4 /* UItextAnimation.swift */; };
+		0846A367209B669C002FB6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0846A366209B669C002FB6BA /* Assets.xcassets */; };
 		0885C53B20953B83004BD088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885C53A20953B83004BD088 /* AppDelegate.swift */; };
 		0885C53D20953B83004BD088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885C53C20953B83004BD088 /* ViewController.swift */; };
 		0885C54020953B83004BD088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0885C53E20953B83004BD088 /* Main.storyboard */; };
-		0885C54220953B84004BD088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0885C54120953B84004BD088 /* Assets.xcassets */; };
 		0885C54520953B84004BD088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0885C54320953B84004BD088 /* LaunchScreen.storyboard */; };
 		550C32CE209626310036D189 /* sheep.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 550C32CD209626310036D189 /* sheep.jpg */; };
 		550C32D020962C380036D189 /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = 550C32CF20962C380036D189 /* exit.png */; };
@@ -33,11 +33,11 @@
 		04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		04EABDAE2097CFB900C41BE4 /* NameRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRecordViewController.swift; sourceTree = "<group>"; };
 		04EABDB02097D0B200C41BE4 /* UItextAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UItextAnimation.swift; sourceTree = "<group>"; };
+		0846A366209B669C002FB6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0885C53720953B83004BD088 /* Sheep Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sheep Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0885C53A20953B83004BD088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0885C53C20953B83004BD088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0885C53F20953B83004BD088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0885C54120953B84004BD088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0885C54420953B84004BD088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0885C54620953B84004BD088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		550C32CD209626310036D189 /* sheep.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sheep.jpg; sourceTree = "<group>"; };
@@ -74,6 +74,7 @@
 		0885C53920953B83004BD088 /* Sheep Game */ = {
 			isa = PBXGroup;
 			children = (
+				0846A366209B669C002FB6BA /* Assets.xcassets */,
 				0885C53A20953B83004BD088 /* AppDelegate.swift */,
 				0885C53C20953B83004BD088 /* ViewController.swift */,
 				04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */,
@@ -82,7 +83,6 @@
 				0885C53E20953B83004BD088 /* Main.storyboard */,
 				04EABDA82097B17100C41BE4 /* PopUpViewController.swift */,
 				04EABD9A209781A700C41BE4 /* SecondViewController.swift */,
-				0885C54120953B84004BD088 /* Assets.xcassets */,
 				04EABD9C209788C700C41BE4 /* ThirdViewController.swift */,
 				04EABDA22097921400C41BE4 /* WanderingGameName.swift */,
 				04EABDA420979FC000C41BE4 /* ButtonAnimation.swift */,
@@ -155,8 +155,8 @@
 				0885C54520953B84004BD088 /* LaunchScreen.storyboard in Resources */,
 				550C32D020962C380036D189 /* exit.png in Resources */,
 				550C32CE209626310036D189 /* sheep.jpg in Resources */,
-				0885C54220953B84004BD088 /* Assets.xcassets in Resources */,
 				0885C54020953B83004BD088 /* Main.storyboard in Resources */,
+				0846A367209B669C002FB6BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
