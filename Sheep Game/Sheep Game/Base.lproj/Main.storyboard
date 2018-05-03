@@ -113,18 +113,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyC-g6-WAp">
-                                        <rect key="frame" x="87" y="187" width="64" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Try Again"/>
-                                        <connections>
-                                            <action selector="toMenu:" destination="oLK-yM-zDc" eventType="touchUpInside" id="7Fm-7g-nDL"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oB-Fw-OAb">
-                                        <rect key="frame" x="58" y="148" width="124" height="30"/>
+                                        <rect key="frame" x="42" y="146" width="154" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Record the Score!"/>
+                                        <state key="normal" title="Record the Score!" backgroundImage="Button Background"/>
                                         <connections>
                                             <action selector="toLeaderBoard:" destination="oLK-yM-zDc" eventType="touchUpInside" id="adM-eO-Z3n"/>
                                             <segue destination="MqL-SH-1dG" kind="show" id="Hrr-pf-4K6"/>
@@ -137,6 +129,14 @@
                                     <constraint firstAttribute="width" constant="237" id="rWz-lj-tJn"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyC-g6-WAp">
+                                <rect key="frame" x="156" y="449" width="102" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Try Again" backgroundImage="Button Background"/>
+                                <connections>
+                                    <action selector="toMenu:" destination="oLK-yM-zDc" eventType="touchUpInside" id="7Fm-7g-nDL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFf-kQ-hQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037.5999999999999" y="43.596059113300491"/>
+            <point key="canvasLocation" x="3036.2318840579715" y="43.206521739130437"/>
         </scene>
         <!--Name Record View Controller-->
         <scene sceneID="AQO-nV-QXR">
@@ -173,14 +173,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-ZR-Aga">
-                                        <rect key="frame" x="50" y="76" width="129" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Go to Leaderboard"/>
-                                        <connections>
-                                            <action selector="toLeaderboard:" destination="MqL-SH-1dG" eventType="touchUpInside" id="fkI-Ld-ZRt"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClW-o3-XSK">
                                         <rect key="frame" x="25" y="34" width="55" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -188,6 +180,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-ZR-Aga">
+                                        <rect key="frame" x="43" y="72" width="154" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Go to Leaderboard" backgroundImage="Button Background"/>
+                                        <connections>
+                                            <action selector="toLeaderboard:" destination="MqL-SH-1dG" eventType="touchUpInside" id="fkI-Ld-ZRt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeB-tq-gux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2809" y="816"/>
+            <point key="canvasLocation" x="2808.6956521739135" y="815.21739130434787"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="Y7Y-mY-TZG">
@@ -229,7 +229,7 @@
                                     <action selector="startGame:" destination="yAV-ZD-21q" eventType="touchUpInside" id="lxK-qL-GiZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5l-IT-VP8">
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5l-IT-VP8">
                                 <rect key="frame" x="141" y="572" width="128" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Options" backgroundImage="Button Background"/>
@@ -237,13 +237,6 @@
                                     <action selector="toOption:" destination="yAV-ZD-21q" eventType="touchUpInside" id="0cl-TE-OJ7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sheep Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-ZZ-Eyz">
-                                <rect key="frame" x="132" y="236" width="151" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-wG-0sI">
                                 <rect key="frame" x="141" y="517" width="128" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -252,6 +245,17 @@
                                     <action selector="toLeaderboard:" destination="yAV-ZD-21q" eventType="touchUpInside" id="81s-h3-A25"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep Top Down" translatesAutoresizingMaskIntoConstraints="NO" id="2q2-W2-dL2">
+                                <rect key="frame" x="66" y="160" width="282" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sheep Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GR-ZZ-Eyz">
+                                <rect key="frame" x="118" y="212" width="137" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9YO-9X-VuA"/>
@@ -269,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHo-wj-WGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="176.80000000000001" y="17.733990147783253"/>
+            <point key="canvasLocation" x="175.36231884057972" y="17.119565217391305"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="dwE-dN-M3a">
@@ -438,7 +442,7 @@
         <image name="grass" width="1600" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hYK-fm-FaD"/>
-        <segue reference="jjG-g5-Z3f"/>
+        <segue reference="yG6-cz-5gZ"/>
+        <segue reference="XrQ-F2-ZZQ"/>
     </inferredMetricsTieBreakers>
 </document>
