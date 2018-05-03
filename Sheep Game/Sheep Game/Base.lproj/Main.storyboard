@@ -265,6 +265,7 @@
                         <outlet property="gameName" destination="7GR-ZZ-Eyz" id="rgP-Qv-MWT"/>
                         <outlet property="leaderboardButton" destination="MOo-wG-0sI" id="cv4-I3-Tkf"/>
                         <outlet property="optionButton" destination="C5l-IT-VP8" id="Msr-M3-B7n"/>
+                        <outlet property="sheepImage" destination="2q2-W2-dL2" id="VU4-9u-LCN"/>
                         <outlet property="startGameButton" destination="5CF-NM-Rjp" id="xyy-VI-fJF"/>
                         <segue destination="47x-mN-Lbx" kind="show" identifier="menuToOption" id="2G8-NU-aVq"/>
                         <segue destination="iDw-1K-eg6" kind="show" identifier="menuToLeaderboard" id="Dvk-IH-xOo"/>
@@ -442,7 +443,7 @@
         <image name="grass" width="1600" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yG6-cz-5gZ"/>
+        <segue reference="Dvk-IH-xOo"/>
         <segue reference="XrQ-F2-ZZQ"/>
     </inferredMetricsTieBreakers>
 </document>

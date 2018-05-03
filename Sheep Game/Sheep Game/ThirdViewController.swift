@@ -20,6 +20,8 @@ class ThirdViewController: UIViewController {
     //leaderboard button
     @IBOutlet weak var leaderboardButton: UIButton!
     
+    @IBOutlet weak var sheepImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,6 +34,7 @@ class ThirdViewController: UIViewController {
         startGameButton.center.x -= view.bounds.width
         optionButton.center.x -= view.bounds.width
         leaderboardButton.center.x -= view.bounds.width
+        sheepImage.center.x -= view.bounds.width
     }
     
     //move back the text into the VC with animation
@@ -39,12 +42,14 @@ class ThirdViewController: UIViewController {
         //animation gameName apper
         UIView.animate(withDuration: 0.5, delay: 0, options: [], animations: {
             self.gameName.center.x += self.view.bounds.width
+            self.sheepImage.center.x += self.view.bounds.width
         },
         completion:{ finished in
             if finished{
-                //after finished appear animation, wait 2s and then start wandering
-                _ = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { (timer) in
+                //after finished appear animation, wait 1s and then start wandering
+                _ = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
                     self.gameName.shake()
+                    self.sheepImage.shake()
                 }
                 
             }

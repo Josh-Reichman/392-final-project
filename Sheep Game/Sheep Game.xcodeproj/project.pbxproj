@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043D92F6209B932E008A22CC /* UIImageViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D92F5209B932E008A22CC /* UIImageViewAnimation.swift */; };
 		04EABD9B209781A700C41BE4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABD9A209781A700C41BE4 /* SecondViewController.swift */; };
 		04EABD9D209788C700C41BE4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABD9C209788C700C41BE4 /* ThirdViewController.swift */; };
 		04EABDA32097921400C41BE4 /* WanderingGameName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EABDA22097921400C41BE4 /* WanderingGameName.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043D92F5209B932E008A22CC /* UIImageViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewAnimation.swift; sourceTree = "<group>"; };
 		04EABD9A209781A700C41BE4 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		04EABD9C209788C700C41BE4 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		04EABDA22097921400C41BE4 /* WanderingGameName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanderingGameName.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */,
 				04EABDAE2097CFB900C41BE4 /* NameRecordViewController.swift */,
 				04EABDB02097D0B200C41BE4 /* UItextAnimation.swift */,
+				043D92F5209B932E008A22CC /* UIImageViewAnimation.swift */,
 				0885C53E20953B83004BD088 /* Main.storyboard */,
 				04EABDA82097B17100C41BE4 /* PopUpViewController.swift */,
 				04EABD9A209781A700C41BE4 /* SecondViewController.swift */,
@@ -168,6 +171,7 @@
 				04EABD9D209788C700C41BE4 /* ThirdViewController.swift in Sources */,
 				04EABDB12097D0B200C41BE4 /* UItextAnimation.swift in Sources */,
 				04EABDA92097B17100C41BE4 /* PopUpViewController.swift in Sources */,
+				043D92F6209B932E008A22CC /* UIImageViewAnimation.swift in Sources */,
 				0885C53B20953B83004BD088 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

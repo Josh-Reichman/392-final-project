@@ -1,24 +1,25 @@
 //
-//  UItextAnimation.swift
+//  UIImageViewAnimation.swift
 //  Sheep Game
 //
-//  Created by Jiakai Chen on 4/30/18.
+//  Created by Jiakai Chen on 5/3/18.
 //  Copyright © 2018 Sheep Squad. All rights reserved.
 //
 
 import UIKit
 
-extension UITextField {
-    func shake(){
+extension UIImageView {
+    func shake() {
+        
         let shake = CABasicAnimation(keyPath: "position")
-        shake.duration = 0.1
-        shake.repeatCount = 4
+        shake.duration = 3
+        shake.repeatCount = .infinity
         shake.autoreverses = true
         
-        let fromPoint = CGPoint(x: self.center.x - 5, y: self.center.y)
+        let fromPoint = CGPoint(x: self.center.x, y: self.center.y)
         let fromValue = NSValue(cgPoint: fromPoint)
         
-        let toPoint = CGPoint(x: self.center.x + 5, y: self.center.y)
+        let toPoint = CGPoint(x: self.center.x + 20, y: self.center.y)
         let toValue = NSValue(cgPoint: toPoint)
         
         shake.fromValue = fromValue
@@ -26,5 +27,4 @@ extension UITextField {
         
         self.layer.add(shake, forKey: "position")
     }
-    
 }
