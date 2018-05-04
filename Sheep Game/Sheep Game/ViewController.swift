@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             let imageName = "pixel_sheep.png"
             let image = UIImage(named: imageName)
             let sheepView = UIImageView(image: image!)
-            sheepView.frame = CGRect(x: 0, y: 0, width: 60, height: 50)
+            sheepView.frame = CGRect(x: 0, y: 0, width: 80, height: 60)
             sheepView.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
             sheepView.tag = 0
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnSheep))
