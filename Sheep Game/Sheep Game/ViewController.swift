@@ -48,15 +48,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var temp: UILabel!
     
     fileprivate func checkIfSheepExited(sheep: UIImageView) {
-        temp.text = String(sheepLeft)
         if (sheep.frame.intersects(exitImage.frame)){
-            sheep.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
             sheep.isUserInteractionEnabled = false
             sheep.layer.removeAllAnimations()
             sheep.removeFromSuperview()
-            sheepLeft -= 1
         }
-        if sheepLeft == 0{
+        if view.subviews.count == 11{   //all sheep exited
             timer.invalidate()
             /*let alert = UIAlertController(title: "Congratulations", message: "Sheep out of barn in "+String(time)+" seconds.", preferredStyle: UIAlertControllerStyle.alert) //TODO: Put return to title screen or start again once it's all implimented.
             self.present(alert, animated: true, completion: nil)*/
@@ -76,8 +73,8 @@ class ViewController: UIViewController {
         if (sheep.tag == 0){
             var rotation = CGFloat(drand48()) * CGFloat.pi * 2
             target = CGPoint(x:sheep.center.x + cos(rotation) * 30,y:sheep.center.y + sin(rotation) * 30)
-            if outOfFence(sheep: sheep){
-                rotation = CGFloat(atan2f(Float(-sheep.transform.b), Float(-sheep.transform.a)))
+            while outOfFence(target: target){
+                rotation = CGFloat(drand48()) * CGFloat.pi * 2
                 target = CGPoint(x:sheep.center.x + cos(rotation) * 30,y:sheep.center.y + sin(rotation) * 30)
             }
             sheep.transform = CGAffineTransform(rotationAngle: rotation)
@@ -89,9 +86,10 @@ class ViewController: UIViewController {
         }
     }
     
-    func outOfFence(sheep: UIImageView) -> Bool{
+    func outOfFence(target: CGPoint) -> Bool{
         for fence in fences{
-            if sheep.frame.intersects(fence.frame){
+            if fence.frame.contains(target)
+            {
                 return true
             }
         }
