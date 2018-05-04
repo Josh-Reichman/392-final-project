@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oLK-yM-zDc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yAV-ZD-21q">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -448,7 +448,7 @@
     </scenes>
     <resources>
         <image name="Button Background" width="128" height="48"/>
-        <image name="Sheep Top Down" width="2825" height="1856"/>
+        <image name="Sheep Top Down" width="450" height="296"/>
         <image name="exit" width="3072" height="1024"/>
         <image name="pixel_grass.png" width="1064" height="1344"/>
     </resources>
