@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             sheep.layer.removeAllAnimations()
             sheep.removeFromSuperview()
         }
-        if view.subviews.count == 11{   //all sheep exited
+        if view.subviews.count == 10{   //all sheep exited
             timer.invalidate()
             /*let alert = UIAlertController(title: "Congratulations", message: "Sheep out of barn in "+String(time)+" seconds.", preferredStyle: UIAlertControllerStyle.alert) //TODO: Put return to title screen or start again once it's all implimented.
             self.present(alert, animated: true, completion: nil)*/
