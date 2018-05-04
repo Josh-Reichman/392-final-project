@@ -11,29 +11,52 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var exitImage: UIImageView!
-    @IBOutlet weak var sheepImage: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     
-    var tapping = false
+    @IBOutlet var fences: [UIView]!
+    
+    let directions:[Int] = [0, 45, 90, 135, 180, 225, 270, 315]
     var target = CGPoint(x: 0,y: 0)
+    var sheepLeft = 1
     static var time = 0  //Jiakai Chen: change it to static for leaderboard and congrats message
     var timer = Timer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sheepLeft = LeaderboardViewController.gameMode
         ViewController.time = 0
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {_ in
             self.update()
         })
-        // Do any additional setup after loading the view, typically from a nib.
-        DispatchQueue.main.async{
-            self.wander()
+        for _ in 1...LeaderboardViewController.gameMode{
+            let imageName = "pixel_sheep.png"
+            let image = UIImage(named: imageName)
+            let sheepView = UIImageView(image: image!)
+            sheepView.frame = CGRect(x: 0, y: 0, width: 60, height: 50)
+            sheepView.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
+            sheepView.tag = 0
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnSheep))
+            sheepView.isUserInteractionEnabled = true
+            sheepView.addGestureRecognizer(tapGestureRecognizer)
+            view.addSubview(sheepView)
+            DispatchQueue.main.async{
+                self.wander(sheep: sheepView)
+            }
         }
     }
+    @IBOutlet weak var temp: UILabel!
     
-    fileprivate func checkIfSheepExited() {
-        if (sheepImage.frame.intersects(exitImage.frame)){
+    fileprivate func checkIfSheepExited(sheep: UIImageView) {
+        temp.text = String(sheepLeft)
+        if (sheep.frame.intersects(exitImage.frame)){
+            sheep.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height/2)
+            sheep.isUserInteractionEnabled = false
+            sheep.layer.removeAllAnimations()
+            sheep.removeFromSuperview()
+            sheepLeft -= 1
+        }
+        if sheepLeft == 0{
             timer.invalidate()
             /*let alert = UIAlertController(title: "Congratulations", message: "Sheep out of barn in "+String(time)+" seconds.", preferredStyle: UIAlertControllerStyle.alert) //TODO: Put return to title screen or start again once it's all implimented.
             self.present(alert, animated: true, completion: nil)*/
@@ -45,27 +68,34 @@ class ViewController: UIViewController {
             popOverVC.view.frame = self.view.frame
             self.view.addSubview(popOverVC.view)
             popOverVC.didMove(toParentViewController: self)
- 
-            tapping = true
         }
     }
     
-    func wander(){
-        checkIfSheepExited()
-        if (!tapping){
-            var rotation = CGFloat(drand48()) * 2 * CGFloat.pi
-            target = CGPoint(x:self.sheepImage.center.x + cos(rotation) * 50,y:self.sheepImage.center.y + sin(rotation) * 50)
-            while (target.x < 0 || target.x > UIScreen.main.bounds.width || target.y < 0 || target.y > UIScreen.main.bounds.height){
-                rotation = CGFloat(drand48()) * 2 * CGFloat.pi
-                target = CGPoint(x:self.sheepImage.center.x + cos(rotation) * 50,y:self.sheepImage.center.y + sin(rotation) * 50)
+    func wander(sheep: UIImageView){
+        checkIfSheepExited(sheep: sheep)
+        if (sheep.tag == 0){
+            var rotation = CGFloat(drand48()) * CGFloat.pi * 2
+            target = CGPoint(x:sheep.center.x + cos(rotation) * 30,y:sheep.center.y + sin(rotation) * 30)
+            if outOfFence(sheep: sheep){
+                rotation = CGFloat(atan2f(Float(-sheep.transform.b), Float(-sheep.transform.a)))
+                target = CGPoint(x:sheep.center.x + cos(rotation) * 30,y:sheep.center.y + sin(rotation) * 30)
             }
-            sheepImage.transform = CGAffineTransform(rotationAngle: rotation)
-            UIView.animate(withDuration: 1, delay: 0.5, options:[.allowUserInteraction], animations: {
-                self.sheepImage.center = self.target
+            sheep.transform = CGAffineTransform(rotationAngle: rotation)
+            UIView.animate(withDuration: 0.8, delay: 0.2, options:[.allowUserInteraction], animations: {
+                sheep.center = self.target
             }, completion: {_ in
-                self.wander()
+                self.wander(sheep: sheep)
             })
         }
+    }
+    
+    func outOfFence(sheep: UIImageView) -> Bool{
+        for fence in fences{
+            if sheep.frame.intersects(fence.frame){
+                return true
+            }
+        }
+        return false
     }
     
     override func didReceiveMemoryWarning() {
@@ -79,17 +109,18 @@ class ViewController: UIViewController {
         timerLabel.text = String(ViewController.time) + "s"
     }
     
-    @IBAction func tapOnSheep(_ sender: Any) {
-        sheepImage.layer.removeAllAnimations()
-        tapping = true
-        let rotation = CGFloat(atan2f(Float(-sheepImage.transform.b), Float(-sheepImage.transform.a)))
-        target = CGPoint(x:self.sheepImage.center.x + cos(rotation) * 50,y:self.sheepImage.center.y + sin(rotation) * 50)
-        sheepImage.transform = CGAffineTransform(rotationAngle: rotation)
-        UIView.animate(withDuration: 1, delay: 0, animations: {
-            self.sheepImage.center = self.target
+    @objc func tapOnSheep(gestureRecognizer: UITapGestureRecognizer) {
+        var sheep = gestureRecognizer.view!
+        sheep.layer.removeAllAnimations()
+        sheep.tag = 1
+        let rotation = CGFloat(atan2f(Float(-sheep.transform.b), Float(-sheep.transform.a)))
+        target = CGPoint(x:sheep.center.x + cos(rotation) * 30,y:sheep.center.y + sin(rotation) * 30)
+        sheep.transform = CGAffineTransform(rotationAngle: rotation)
+        UIView.animate(withDuration: 0.8, delay: 0, animations: {
+            sheep.center = self.target
         }, completion: {_ in
-            self.tapping = false
-            self.wander()
+            sheep.tag = 0
+            self.wander(sheep: sheep as! UIImageView)
         })
     }
 

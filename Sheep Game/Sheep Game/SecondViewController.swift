@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sheepNumber.text = String(LeaderboardViewController.gamemode)
+        sheepNumber.text = String(LeaderboardViewController.gameMode)
         // Do any additional setup after loading the view.
     }
     
@@ -36,23 +36,23 @@ class SecondViewController: UIViewController {
      */
     
     @IBAction func ChooseOneSheep(_ sender: Any) {
-        LeaderboardViewController.gamemode = 1
-        sheepNumber.text = String(LeaderboardViewController.gamemode)
+        LeaderboardViewController.gameMode = 1
+        sheepNumber.text = String(LeaderboardViewController.gameMode)
     }
     
     @IBAction func ChooseTwoSheep(_ sender: Any) {
-        LeaderboardViewController.gamemode = 2
-        sheepNumber.text = String(LeaderboardViewController.gamemode)
+        LeaderboardViewController.gameMode = 2
+        sheepNumber.text = String(LeaderboardViewController.gameMode)
     }
     
     @IBAction func ChooseThreeSheep(_ sender: Any) {
-        LeaderboardViewController.gamemode = 3
-        sheepNumber.text = String(LeaderboardViewController.gamemode)
+        LeaderboardViewController.gameMode = 3
+        sheepNumber.text = String(LeaderboardViewController.gameMode)
     }
     
     @IBAction func ChooseFourSheep(_ sender: Any) {
-        LeaderboardViewController.gamemode = 4
-        sheepNumber.text = String(LeaderboardViewController.gamemode)
+        LeaderboardViewController.gameMode = 4
+        sheepNumber.text = String(LeaderboardViewController.gameMode)
     }
     @IBAction func backToMenu(_ sender: Any) {
         performSegue(withIdentifier: "optionToMenu", sender: self)

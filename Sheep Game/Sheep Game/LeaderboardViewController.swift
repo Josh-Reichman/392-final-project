@@ -24,7 +24,7 @@ class LeaderboardViewController: UIViewController {
     var timeThree:[Int] = [];
     var timeFour:[Int] = [];
     
-    static var gamemode = 1;
+    static var gameMode = 1;
     
     var minimumTime = 0;
     var twoSheepMinimumTime = 0;
@@ -51,19 +51,19 @@ class LeaderboardViewController: UIViewController {
         
         if (NameRecordViewController.updateStats == true){
             if(NameRecordViewController.nameRecord != ""){
-                if(LeaderboardViewController.gamemode == 1){
+                if(LeaderboardViewController.gameMode == 1){
                     nameOne.append(NameRecordViewController.nameRecord)
                     timeOne.append(ViewController.time)
                 }
-                if(LeaderboardViewController.gamemode == 2){
+                if(LeaderboardViewController.gameMode == 2){
                     nameTwo.append(NameRecordViewController.nameRecord)
                     timeTwo.append(ViewController.time)
                 }
-                if(LeaderboardViewController.gamemode == 3){
+                if(LeaderboardViewController.gameMode == 3){
                     nameThree.append(NameRecordViewController.nameRecord)
                     timeThree.append(ViewController.time)
                 }
-                if(LeaderboardViewController.gamemode == 4){
+                if(LeaderboardViewController.gameMode == 4){
                     nameFour.append(NameRecordViewController.nameRecord)
                     timeFour.append(ViewController.time)
                 }
@@ -122,33 +122,33 @@ class LeaderboardViewController: UIViewController {
         
         //One sheep highest
         if(timeOne.min() != nil){
-            label1.text = " Player: \(nameOne[minTimeLocation]) TimeUsed: \(minimumTime)"
+            label1.text = " Player: \(nameOne[minTimeLocation]),   Time used: \(minimumTime)"
         }
         else{
-            label1.text = " Player: None TimeUsed: None"
+            label1.text = " Player: None, Time used: None"
         }
         //Two sheep highest
         if(timeTwo.min() != nil){
-            label2.text = " Player: \(nameTwo[twoSheepMinTimeLocation]) TimeUsed: \(twoSheepMinimumTime)"
+            label2.text = " Player: \(nameTwo[twoSheepMinTimeLocation]),   Timeused: \(twoSheepMinimumTime)"
         }
         else{
-            label2.text = " Player: None TimeUsed: None"
+            label2.text = " Player: None, Time used: None"
         }
         
         //Three sheep highest
         if(timeThree.min() != nil){
-            label3.text = " Player: \(nameThree[threeSheepMinTimeLocation]) TimeUsed: \(threeSheepMinimumTime)"
+            label3.text = " Player: \(nameThree[threeSheepMinTimeLocation]),   Time used: \(threeSheepMinimumTime)"
         }
         else{
-            label3.text = " Player: None TimeUsed: None"
+            label3.text = " Player: None, Time used: None"
         }
         
         //Four sheep highest
         if(timeFour.min() != nil){
-            label4.text = " Player: \(nameFour[fourSheepMinTimeLocation]) TimeUsed: \(fourSheepMinimumTime)"
+            label4.text = " Player: \(nameFour[fourSheepMinTimeLocation]),   Time used: \(fourSheepMinimumTime)"
         }
         else{
-            label4.text = " Player: None TimeUsed: None"
+            label4.text = " Player: None, Time used: None"
         }
         label1.textAlignment = .center
         label2.textAlignment = .center

@@ -21,6 +21,8 @@
 		0885C53D20953B83004BD088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0885C53C20953B83004BD088 /* ViewController.swift */; };
 		0885C54020953B83004BD088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0885C53E20953B83004BD088 /* Main.storyboard */; };
 		0885C54520953B84004BD088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0885C54320953B84004BD088 /* LaunchScreen.storyboard */; };
+		556F5B0B209BA9F600A07A22 /* pixel_grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 556F5B0A209BA9F600A07A22 /* pixel_grass.png */; };
+		556F5B0F209BC2DE00A07A22 /* pixel_sheep.png in Resources */ = {isa = PBXBuildFile; fileRef = 556F5B0E209BC2DD00A07A22 /* pixel_sheep.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		0885C53F20953B83004BD088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0885C54420953B84004BD088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0885C54620953B84004BD088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556F5B0A209BA9F600A07A22 /* pixel_grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixel_grass.png; sourceTree = "<group>"; };
+		556F5B0E209BC2DD00A07A22 /* pixel_sheep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pixel_sheep.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +77,12 @@
 			isa = PBXGroup;
 			children = (
 				0846A366209B669C002FB6BA /* Assets.xcassets */,
+				556F5B0A209BA9F600A07A22 /* pixel_grass.png */,
 				0885C53A20953B83004BD088 /* AppDelegate.swift */,
 				0885C53C20953B83004BD088 /* ViewController.swift */,
 				04EABDAA2097C58800C41BE4 /* LeaderboardViewController.swift */,
 				04EABDAE2097CFB900C41BE4 /* NameRecordViewController.swift */,
+				556F5B0E209BC2DD00A07A22 /* pixel_sheep.png */,
 				04EABDB02097D0B200C41BE4 /* UItextAnimation.swift */,
 				043D92F5209B932E008A22CC /* UIImageViewAnimation.swift */,
 				0885C53E20953B83004BD088 /* Main.storyboard */,
@@ -149,6 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				556F5B0F209BC2DE00A07A22 /* pixel_sheep.png in Resources */,
+				556F5B0B209BA9F600A07A22 /* pixel_grass.png in Resources */,
 				0885C54520953B84004BD088 /* LaunchScreen.storyboard in Resources */,
 				0885C54020953B83004BD088 /* Main.storyboard in Resources */,
 				0846A367209B669C002FB6BA /* Assets.xcassets in Resources */,

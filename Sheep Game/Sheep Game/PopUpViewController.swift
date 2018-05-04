@@ -17,7 +17,7 @@ class PopUpViewController: UIViewController {
         self.view.backgroundColor = UIColor.white.withAlphaComponent(0.5) 
         
         //get the time directly from viewController
-        timeUsed.text = "Time Used: \(ViewController.time)s"
+        timeUsed.text = "Time used: \(ViewController.time)s"
     }
 
     override func didReceiveMemoryWarning() {

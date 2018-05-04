@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="grass" translatesAutoresizingMaskIntoConstraints="NO" id="RgU-yp-ILB">
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pixel_grass.png" translatesAutoresizingMaskIntoConstraints="NO" id="RgU-yp-ILB">
                                 <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exit" translatesAutoresizingMaskIntoConstraints="NO" id="1U9-mz-T8K" userLabel="exit">
-                                <rect key="frame" x="78" y="669" width="259" height="67"/>
+                                <rect key="frame" x="147" y="668" width="122" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T0-IU-b78">
@@ -53,29 +53,58 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXIT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqc-cm-CPU">
-                                <rect key="frame" x="148" y="685" width="119" height="33"/>
+                                <rect key="frame" x="150" y="685" width="119" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sheep Top Down" translatesAutoresizingMaskIntoConstraints="NO" id="7IQ-Ee-X16">
-                                <rect key="frame" x="145" y="313" width="126" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="dud-KE-a9c" appends="YES" id="RH0-YK-DzE"/>
-                                </connections>
-                            </imageView>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0mO-YG-bsr" userLabel="Right fence">
+                                <rect key="frame" x="359" y="131" width="48" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTh-lv-XzP" userLabel="Left fence">
+                                <rect key="frame" x="3" y="136" width="42" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="elb-Tt-83J" userLabel="Top fence">
+                                <rect key="frame" x="9" y="131" width="396" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HyY-Vw-zQf" userLabel="Bottom left fence">
+                                <rect key="frame" x="3" y="654" width="139" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-oI-Plr" userLabel="Bottom right fence">
+                                <rect key="frame" x="272" y="654" width="139" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z1-LK-ODV">
+                                <rect key="frame" x="244" y="338" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="exitImage" destination="1U9-mz-T8K" id="g9Z-Da-5vL"/>
-                        <outlet property="sheepImage" destination="7IQ-Ee-X16" id="619-Ja-vOE"/>
+                        <outlet property="temp" destination="3z1-LK-ODV" id="ZFy-TO-L8g"/>
                         <outlet property="timerLabel" destination="SuD-Os-uou" id="hZZ-wQ-Bkh"/>
+                        <outletCollection property="fences" destination="xhd-oI-Plr" collectionClass="NSMutableArray" id="CSp-ty-Y8q"/>
+                        <outletCollection property="fences" destination="0mO-YG-bsr" collectionClass="NSMutableArray" id="AR5-Cr-1G8"/>
+                        <outletCollection property="fences" destination="uTh-lv-XzP" collectionClass="NSMutableArray" id="ANc-K9-BxS"/>
+                        <outletCollection property="fences" destination="elb-Tt-83J" collectionClass="NSMutableArray" id="yFp-Kd-2DX"/>
+                        <outletCollection property="fences" destination="HyY-Vw-zQf" collectionClass="NSMutableArray" id="Cr9-Qa-tMw"/>
                         <segue destination="oLK-yM-zDc" kind="show" identifier="win" id="lr4-hs-Uen"/>
                     </connections>
                 </viewController>
@@ -86,7 +115,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1239.2" y="8.1280788177339911"/>
+            <point key="canvasLocation" x="1531.8840579710145" y="-292.66304347826087"/>
         </scene>
         <!--Pop Up View Controller-->
         <scene sceneID="rT3-k7-8Xf">
@@ -153,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFf-kQ-hQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3036.2318840579715" y="43.206521739130437"/>
+            <point key="canvasLocation" x="2809" y="-293"/>
         </scene>
         <!--Name Record View Controller-->
         <scene sceneID="AQO-nV-QXR">
@@ -210,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jeB-tq-gux" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2808.6956521739135" y="815.21739130434787"/>
+            <point key="canvasLocation" x="2809" y="814"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="Y7Y-mY-TZG">
@@ -274,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHo-wj-WGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175.36231884057972" y="17.119565217391305"/>
+            <point key="canvasLocation" x="212" y="-292"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="dwE-dN-M3a">
@@ -359,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySy-MF-wOX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1068" y="710"/>
+            <point key="canvasLocation" x="212" y="815"/>
         </scene>
         <!--Leaderboard View Controller-->
         <scene sceneID="Yfo-AM-Dqn">
@@ -422,17 +451,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZ9-Ng-f4r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="212" y="833"/>
+            <point key="canvasLocation" x="1532" y="815"/>
         </scene>
     </scenes>
     <resources>
         <image name="Button Background" width="128" height="48"/>
         <image name="Sheep Top Down" width="2825" height="1856"/>
         <image name="exit" width="3072" height="1024"/>
-        <image name="grass" width="1600" height="1200"/>
+        <image name="pixel_grass.png" width="1064" height="1344"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dvk-IH-xOo"/>
-        <segue reference="wft-Mv-euL"/>
+        <segue reference="hYK-fm-FaD"/>
+        <segue reference="XrQ-F2-ZZQ"/>
     </inferredMetricsTieBreakers>
 </document>
