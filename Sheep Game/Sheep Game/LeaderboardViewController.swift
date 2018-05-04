@@ -115,24 +115,24 @@ class LeaderboardViewController: UIViewController {
         label2.center = CGPoint(x: 180, y: 370)
         
         let label3 = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 21))
-        label3.center = CGPoint(x: 180, y: 470)
+        label3.center = CGPoint(x: 180, y: 480)
         
         let label4 = UILabel(frame: CGRect(x: 0, y: 0, width: 300, height: 21))
-        label4.center = CGPoint(x: 180, y:570)
+        label4.center = CGPoint(x: 180, y:580)
         
         //One sheep highest
         if(timeOne.min() != nil){
             label1.text = " Player: \(nameOne[minTimeLocation]),   Time used: \(minimumTime)"
         }
         else{
-            label1.text = " Player: None, Time used: None"
+            label1.text = " Player: N/A, Time used: N/A"
         }
         //Two sheep highest
         if(timeTwo.min() != nil){
             label2.text = " Player: \(nameTwo[twoSheepMinTimeLocation]),   Timeused: \(twoSheepMinimumTime)"
         }
         else{
-            label2.text = " Player: None, Time used: None"
+            label2.text = " Player: N/A, Time used: N/A"
         }
         
         //Three sheep highest
@@ -140,7 +140,7 @@ class LeaderboardViewController: UIViewController {
             label3.text = " Player: \(nameThree[threeSheepMinTimeLocation]),   Time used: \(threeSheepMinimumTime)"
         }
         else{
-            label3.text = " Player: None, Time used: None"
+            label3.text = " Player: N/A, Time used: N/A"
         }
         
         //Four sheep highest
@@ -148,7 +148,7 @@ class LeaderboardViewController: UIViewController {
             label4.text = " Player: \(nameFour[fourSheepMinTimeLocation]),   Time used: \(fourSheepMinimumTime)"
         }
         else{
-            label4.text = " Player: None, Time used: None"
+            label4.text = " Player: N/A, Time used: N/A"
         }
         label1.textAlignment = .center
         label2.textAlignment = .center
